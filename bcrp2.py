@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import datetime
 import warnings
+import requests
 
 # Ignorar advertencias menores de pandas
 warnings.filterwarnings('ignore')
