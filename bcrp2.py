@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 st.set_page_config(layout="wide", page_title="Simulador BCRP - TradingView Style", page_icon="🏦")
 
 # 2. FUNCIÓN DE DESCARGA DE DATOS (CON CACHÉ PARA MAYOR VELOCIDAD)
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=14400)
 def cargar_datos_desde_2015():
     try:
         ticker = yf.Ticker("USDPEN=X")
